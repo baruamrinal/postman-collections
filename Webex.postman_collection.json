@@ -1,0 +1,262 @@
+{
+	"info": {
+		"_postman_id": "102f45f8-f953-4e80-b68b-0678507d0ab6",
+		"name": "Webex",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get session Info",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Host",
+						"value": "simplilearnsolutions.webex.com"
+					},
+					{
+						"key": "User-Agent",
+						"value": "PostIt"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<serv:message xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:serv=\"simplilearnsolutions.webex.com/WBXService/XMLService\">\n<header>\n <securityContext>\n  <webExID>instructor30</webExID>\n  <password>@Simpli123</password>\n  <siteID>1240102</siteID>\n  <partnerID>WnEdW1IaWDQFzAgDZhVmtw</partnerID>\n </securityContext>\n</header>\n<body>\n  <bodyContent xsi:type=\"java:com.webex.service.binding.ep.GetSessionInfo\">\n     <sessionKey>571208160</sessionKey>\n   </bodyContent>\n  </body>\n</serv:message>"
+				},
+				"url": {
+					"raw": "https://simplilearnsolutions.webex.com/WBXService/XMLService",
+					"protocol": "https",
+					"host": [
+						"simplilearnsolutions",
+						"webex",
+						"com"
+					],
+					"path": [
+						"WBXService",
+						"XMLService"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Generate Attend Button Issue",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Host",
+						"value": "simplilearnsolutions.webex.com"
+					},
+					{
+						"key": "User-Agent",
+						"value": "PostIt"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<serv:message xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:serv=\"simplilearnsolutions.webex.com/WBXService/XMLService\">\n<header>\n <securityContext>\n  <webExID>instructor19</webExID>\n  <password>@Simpli123</password>\n  <siteID>1240102</siteID>\n  <partnerID>WnEdW1IaWDQFzAgDZhVmtw</partnerID>\n </securityContext>\n</header>\n<body>\n  <bodyContent xsi:type=\"java:com.webex.service.binding.meeting.GetjoinurlMeeting\">\n     <sessionKey>576806735</sessionKey>\n     <meetingPW>Dedm3rA6</meetingPW>\n     <attendeeName>gsenthiler</attendeeName>\n     <attendeeEmail>gsenthilerin@gmail.com</attendeeEmail>\n     <RegID>587142</RegID>\n   </bodyContent>\n  </body>\n</serv:message>"
+				},
+				"url": {
+					"raw": "https://simplilearnsolutions.webex.com/WBXService/XMLService",
+					"protocol": "https",
+					"host": [
+						"simplilearnsolutions",
+						"webex",
+						"com"
+					],
+					"path": [
+						"WBXService",
+						"XMLService"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LstMeetingAttendee",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Host",
+						"value": "simplilearnsolutions.webex.com"
+					},
+					{
+						"key": "User-Agent",
+						"value": "PostIt"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<serv:message xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:serv=\"simplilearnsolutions.webex.com/WBXService/XMLService\">\n<header>\n <securityContext>\n  <webExID>instructor47</webExID>\n  <password>@Simpli123</password>\n  <siteID>1240102</siteID>\n  <partnerID>WnEdW1IaWDQFzAgDZhVmtw</partnerID>\n </securityContext>\n</header>\n<body>\n  <bodyContent xsi:type=\"java:com.webex.service.binding.attendee.LstMeetingAttendee\">\n    <sessionKey>912676049</sessionKey>\n\t    <listControl>\n\t            <startFrom>1</startFrom>\n\t            <maximumNum>200</maximumNum>\n\t    </listControl>\n   </bodyContent>\n  </body>\n</serv:message>"
+				},
+				"url": {
+					"raw": "https://simplilearnsolutions.webex.com/WBXService/XMLService",
+					"protocol": "https",
+					"host": [
+						"simplilearnsolutions",
+						"webex",
+						"com"
+					],
+					"path": [
+						"WBXService",
+						"XMLService"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LsttrainingattendeeHistory",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Host",
+						"value": "simplilearnsolutions.webex.com"
+					},
+					{
+						"key": "User-Agent",
+						"value": "PostIt"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<serv:message xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:serv=\"simplilearnsolutions.webex.com/WBXService/XMLService\">\n<header>\n <securityContext>\n  <webExID>instructor47</webExID>\n  <password>@Simpli123</password>\n  <siteID>1240102</siteID>\n  <partnerID>WnEdW1IaWDQFzAgDZhVmtw</partnerID>\n </securityContext>\n</header>\n<body>\n\t<bodyContent xsi:type=\"java:com.webex.service.binding.history.LsttrainingattendeeHistory\">\n        <confID>161293832482197956</confID>\n        <inclHistory>true</inclHistory>\n        <listControl>\n            <serv:startFrom>1</serv:startFrom>\n            <serv:maximumNum>5</serv:maximumNum>\n            <serv:listMethod>AND</serv:listMethod>\n        </listControl>\n        <order>\n            <orderBy>NAME</orderBy>\n            <orderAD>ASC</orderAD>\n        </order>\n    </bodyContent>\n</body>\n</serv:message>"
+				},
+				"url": {
+					"raw": "https://simplilearnsolutions.webex.com/WBXService/XMLService",
+					"protocol": "https",
+					"host": [
+						"simplilearnsolutions",
+						"webex",
+						"com"
+					],
+					"path": [
+						"WBXService",
+						"XMLService"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Training Session",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Host",
+						"value": "simplilearnsolutions.webex.com"
+					},
+					{
+						"key": "User-Agent",
+						"value": "PostIt"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<serv:message xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:serv=\"simplilearnsolutions.webex.com/WBXService/XMLService\">\n<header>\n<securityContext>\n <webExID>instructor41</webExID>\n <password>@Simpli123</password>\n <siteID>1240102</siteID>\n <partnerID>WnEdW1IaWDQFzAgDZhVmtw</partnerID>\n</securityContext>\n</header>\n<body>\n <bodyContent xsi:type=\"java:com.webex.service.binding.training.GetTrainingSession\">\n    <sessionKey>573520495</sessionKey>\n  </bodyContent>\n </body>\n</serv:message>"
+				},
+				"url": {
+					"raw": "https://simplilearnsolutions.webex.com/WBXService/XMLService",
+					"protocol": "https",
+					"host": [
+						"simplilearnsolutions",
+						"webex",
+						"com"
+					],
+					"path": [
+						"WBXService",
+						"XMLService"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RegisterMeetingAttendee",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Host",
+						"value": "simplilearnsolutions.webex.com"
+					},
+					{
+						"key": "User-Agent",
+						"value": "PostIt"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<serv:message xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:serv=\"simplilearnsolutions.webex.com/WBXService/XMLService\">\n<header>\n <securityContext>\n  <webExID>instructor30</webExID>\n  <password>@Simpli123</password>\n  <siteID>1240102</siteID>\n  <partnerID>WnEdW1IaWDQFzAgDZhVmtw</partnerID>\n </securityContext>\n</header>\n<body>\n  <bodyContent xsi:type=\"java:com.webex.service.binding.attendee.RegisterMeetingAttendee\">\n    <attendees>\n      <person>\n        <name>Ganesh.c</name>\n        <email>ganesh.c@simplilearn.com</email>\n      </person>\n      <sessionKey>574122257</sessionKey>\n      <joinStatus>REJECT</joinStatus>\n      </attendees>\n   </bodyContent>\n  </body>\n</serv:message>\n\n"
+				},
+				"url": {
+					"raw": "https://simplilearnsolutions.webex.com/WBXService/XMLService",
+					"protocol": "https",
+					"host": [
+						"simplilearnsolutions",
+						"webex",
+						"com"
+					],
+					"path": [
+						"WBXService",
+						"XMLService"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get RecordingIds by SessionId",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "<serv:message xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:serv=\"simplilearnsolutions.webex.com/WBXService/XMLService\">\n<header>\n        <securityContext>\n\t        <webExID>instructor06</webExID>\n\t        <password>@Simpli123</password>\n\t        <siteID>1240102</siteID>\n\t        <partnerID>WnEdW1IaWDQFzAgDZhVmtw</partnerID>\n        </securityContext>\n</header>\n<body>\n\t<bodyContent xsi:type=\"java:com.webex.service.binding.ep.LstRecording\">\n\t\t<listControl>\n\t\t        <startFrom>1</startFrom>\n\t\t        <maximumNum>100</maximumNum>\n\t\t</listControl>\n\t\t<sessionKey>1706300698</sessionKey>\n\t\t<hostWebExID>instructor06</hostWebExID>\n\t\t<returnSessionDetails>true</returnSessionDetails>\n\t</bodyContent>\n</body>\n</serv:message>"
+				},
+				"url": {
+					"raw": "https://simplilearnsolutions.webex.com/WBXService/XMLService",
+					"protocol": "https",
+					"host": [
+						"simplilearnsolutions",
+						"webex",
+						"com"
+					],
+					"path": [
+						"WBXService",
+						"XMLService"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
